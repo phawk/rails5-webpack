@@ -1,0 +1,8 @@
+.horizontal-list {
+  list-style: none;
+
+  & > li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
