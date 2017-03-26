@@ -1,7 +1,9 @@
+import "highlight.js/styles/github-gist.css";
 import "reveal/index.css";
 import "styles/main.scss";
 
 import Reveal from 'reveal/index.js';
+import hljs from 'highlight.js';
 
 const version = "0.1.0";
 
@@ -15,3 +17,5 @@ Reveal.initialize({
   // default/cube/page/concave/zoom/linear/fade/none
   transition: 'none',
 });
+
+hljs.initHighlightingOnLoad();

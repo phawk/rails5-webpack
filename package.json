@@ -5,6 +5,7 @@
   "description": "Slide deck using reveal.js",
   "main": "webpack.config.js",
   "dependencies": {
+    "highlight.js": "^9.10.0",
     "reveal": "0.0.4"
   },
   "devDependencies": {

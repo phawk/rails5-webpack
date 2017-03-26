@@ -28,27 +28,130 @@
         <section>
           <h1>Who am I?</h1>
 
-          <img class="plain" src="/assets/da-logo.png" style="max-height: 100px;">
-        </section>
-
-        <section>
-          <h1>Current state of affairs</h1>
-
-          <ul>
-            <li>Rails Asset pipeline</li>
-            <li>JS Packages that only list how to install via npm</li>
-            <li>yarn</li>
-            <li>grunt/gulp being used by frontend devs and designers</li>
-            <li>Rails is left behind :(</li>
+          <ul class="horizontal-list">
+            <li><img class="plain" src="/assets/da-logo.png" style="max-height: 100px;"></li>
+            <li>
+              Web developer &amp; Partner<br>
+              dawsonandrews.com
+            </li>
           </ul>
         </section>
 
         <section>
-          <h1>meanwhile in node.js&hellip;</h1>
+          <h1>Module loaders</h1>
+          <img src="/assets/frameworks@2x.png" width="802" class="plain">
+        </section>
+
+        <section>
+          <h1>Rails asset pipeline</h1>
+          <ul>
+            <li class="fragment" data-fragment-index="0">Shipped with Rails 3.1 – August 2011</li>
+            <li class="fragment" data-fragment-index="1">State of the art – concatenating to single file, asset digests</li>
+            <li class="fragment" data-fragment-index="2">Coffeescript</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>6 years later&hellip;</h3>
+          <h1>JavaScript grew up</h1>
+        </section>
+
+        <section>
+          <h3>6 years later&hellip;</h3>
+          <h1>JavaScript grew up</h1>
+        </section>
+
+        <section>
+<h3>Arrow functions</h3>
+<pre>
+<code class="javascript" data-trim data-noescape>
+nums.forEach(v => {
+   if (v % 5 === 0)
+       fives.push(v)
+})
+</code>
+</pre>
+        </section>
+
+        <section>
+<h3>Default parameters</h3>
+<pre>
+<code class="javascript" data-trim data-noescape>
+function f (x, y = 7, z = 42) {
+    return x + y + z
+}
+f(1) === 50
+</code>
+</pre>
+        </section>
+
+        <section>
+<h3>Method shorthand</h3>
+<pre>
+<code class="javascript" data-trim data-noescape>
+obj = {
+    foo (a, b) {
+        …
+    },
+    bar (x, y) {
+        …
+    }
+}
+</code>
+</pre>
+<h3>Property shorthand</h3>
+<pre>
+<code class="javascript" data-trim data-noescape>
+obj = { x, y }
+</code>
+</pre>
+        </section>
+
+        <section>
+<h3>We’ve even got classes!</h3>
+<pre>
+<code class="javascript" data-trim data-noescape>
+class Rectangle extends Shape {
+    constructor (id, x, y, width, height) {
+        super(id, x, y)
+        this.width  = width
+        this.height = height
+    }
+}
+class Circle extends Shape {
+    constructor (id, x, y, radius) {
+        super(id, x, y)
+        this.radius = radius
+    }
+}
+</code>
+</pre>
+        </section>
+
+        <section>
+          <h3>Rails asset pipeline</h3>
+          <h1>Why not use it?</h1>
 
           <ul>
-            <li><strong>webpack</strong> - tree shaking, hmr etc...</li>
-            All the goodies that come with webpack/node for frontend...
+            <li class="fragment" data-fragment-index="0">Namespacing sucks for large javascript apps</li>
+            <li class="fragment" data-fragment-index="1">JS Packages install via npm</li>
+            <li class="fragment" data-fragment-index="2">Frontend devs + designers use node tooling (grunt, gulp etc)</li>
+          </ul>
+        </section>
+
+        <section>
+          <ul class="horizontal-list">
+            <li><img class="plain" src="/assets/webpack.png" style="max-height: 150px;"></li>
+
+            <li>
+              <ul>
+                <li>ES6 modules</li>
+                <li>Uses npm for package mgmt</li>
+                <li>Babel</li>
+                <li>Tree shaking</li>
+                <li>Hot module replacement</li>
+              </ul>
+            </li>
           </ul>
         </section>
 
@@ -73,7 +176,10 @@
         </section>
 
         <section>
-          <h1><a href="https://github.com/rails/webpacker">rails/webpacker</a></h1>
+          <ul class="horizontal-list">
+            <li><img src="/assets/octocat.png" width="40" class="plain"></li>
+            <li><h1><a href="https://github.com/rails/webpacker">rails/webpacker</a></h1></li>
+          </ul>
 
           <h3>Useable with rails 5.0</h3>
           <h3>Included with rails 5.1 (release TBC ~April 2017)</h3>
@@ -83,20 +189,25 @@
           <h1>What you get&hellip;</h1>
 
           <ul>
-            <li class="fragment" data-fragment-index="0"><code>rails new myapp --webpack</code></li>
-            <li class="fragment" data-fragment-index="1"><code>rails webpacker:install:vue (angular|react)</code></li>
-            <li class="fragment" data-fragment-index="2"><code>&lt;%= javascript_pack_tag 'application' %&gt;</code></li>
-            <li class="fragment" data-fragment-index="3">hooks into <code>rake assets:precompile</code></li>
+            <li class="fragment" data-fragment-index="0"><code class="sh">$ rails new myapp --webpack</code></li>
+            <li class="fragment" data-fragment-index="1"><code class="sh">$ rails webpacker:install:vue (angular|react)</code></li>
+            <li class="fragment" data-fragment-index="2"><code class="ruby">&lt;%= javascript_pack_tag 'application' %&gt;</code></li>
+            <li class="fragment" data-fragment-index="3">hooks into <code class="sh">$ rake assets:precompile</code></li>
           </ul>
         </section>
 
         <section>
           <ul>
+            <li>convention over configuration</li>
             <li>.vue module syntax</li>
             <li>.jsx files</li>
             <li>Hot module replacement</li>
             <li></li>
           </ul>
+        </section>
+
+        <section>
+          foreman with Procfile.dev
         </section>
 
         <section>
