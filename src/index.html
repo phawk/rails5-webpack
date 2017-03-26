@@ -35,10 +35,31 @@
           <h1>Current state of affairs</h1>
 
           <ul>
-            <li>Asset pipeline</li>
-            <li>Packages that only list how to install via npm</li>
+            <li>Rails Asset pipeline</li>
+            <li>JS Packages that only list how to install via npm</li>
             <li>yarn</li>
-            <li>grunt gulp being used by frontend devs and designers</li>
+            <li>grunt/gulp being used by frontend devs and designers</li>
+            <li>Rails is left behind :(</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>meanwhile in node.js&hellip;</h1>
+
+          <ul>
+            <li><strong>webpack</strong> - tree shaking, hmr etc...</li>
+            All the goodies that come with webpack/node for frontend...
+          </ul>
+        </section>
+
+        <section>
+          <h1>Options your left with</h1>
+
+          <ul>
+            <li class="fragment" data-fragment-index="0">Abandon rails :(</li>
+            <li class="fragment" data-fragment-index="1"><strong>rails-api</strong> + separate frontend</li>
+            <li class="fragment" data-fragment-index="2">Add custom webpack scripts to your rails app (goes against rails mantra)</li>
+            <li class="fragment" data-fragment-index="3">or&hellip;</li>
           </ul>
         </section>
 
@@ -50,7 +71,14 @@
         </section>
 
         <section>
-          <h1></h1>
+          <h1>What you get&hellip;</h1>
+
+          <ul>
+            <li class="fragment" data-fragment-index="0"><code>rails new myapp --webpack</code></li>
+            <li class="fragment" data-fragment-index="1"><code>rails webpacker:install:vue (angular|react)</code></li>
+            <li class="fragment" data-fragment-index="2"><code>&lt;%= javascript_pack_tag 'application' %&gt;</code></li>
+            <li class="fragment" data-fragment-index="3">hooks into <code>rake assets:precompile</code></li>
+          </ul>
         </section>
 
         <section>
