@@ -249,33 +249,42 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls .navigate-left,
+.reveal .controls div.navigate-left {
+  border-right-color: #333;
+}
+.reveal .controls div.navigate-right {
+  border-left-color: #333;
+}
+.reveal .controls div.navigate-up {
+  border-bottom-color: #333;
+}
+.reveal .controls div.navigate-down {
+  border-top-color: #333;
+}
+
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #00008B; }
+  border-right-color: #BC8E67; }
 
-.reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #00008B; }
+  border-left-color: #BC8E67; }
 
-.reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #00008B; }
+  border-bottom-color: #BC8E67; }
 
-.reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #00008B; }
+  border-top-color: #BC8E67; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #0000f1; }
+  border-right-color: darken(#BC8E67, 10%); }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #0000f1; }
+  border-left-color: darken(#BC8E67, 10%); }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #0000f1; }
+  border-bottom-color: darken(#BC8E67, 10%); }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #0000f1; }
+  border-top-color: darken(#BC8E67, 10%); }
 
 /*********************************************
  * PROGRESS BAR
