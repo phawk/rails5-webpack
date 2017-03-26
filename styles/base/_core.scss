@@ -3,6 +3,7 @@ body {
   background: #fff;
   color: #444;
   font-family: $sans-stack;
+  line-height: 1.7;
 }
 
 .reveal {
@@ -10,5 +11,13 @@ body {
     font-family: $serif-stack;
     font-weight: 400;
     color: #000;
+  }
+
+  .marginTop-xl {
+    margin-top: 3em;
+  }
+
+  ul > li, p {
+    line-height: 1.7;
   }
 }
