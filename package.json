@@ -1,10 +1,11 @@
 {
-  "name": "sinatra-slide-deck",
+  "name": "express-slide-deck",
   "private": true,
   "version": "0.1.0",
   "description": "Slide deck using reveal.js",
-  "main": "webpack.config.js",
+  "main": "server.js",
   "dependencies": {
+    "express": "^4.15.2",
     "highlight.js": "^9.10.0",
     "reveal": "0.0.4"
   },
@@ -25,7 +26,9 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base dist/ --inline",
     "build": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Pete Hawkins",
   "license": "ISC"
