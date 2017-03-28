@@ -142,6 +142,7 @@ body {
   font-style: italic; }
 
 .reveal pre {
+  background-color: #002b36;
   display: block;
   position: relative;
   width: 90%;
@@ -158,7 +159,9 @@ body {
 
 .reveal pre code {
   display: block;
-  padding: 5px;
+  padding: 15px;
+  font-size: 22px;
+  line-height: 1.5;
   overflow: auto;
   max-height: 400px;
   word-wrap: normal; }

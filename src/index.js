@@ -1,4 +1,4 @@
-import "highlight.js/styles/github-gist.css";
+import "highlight.js/styles/solarized-dark.css";
 import "reveal/index.css";
 import "styles/main.scss";
 
