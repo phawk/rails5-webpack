@@ -210,17 +210,60 @@ class Circle extends Shape {
         </section>
 
         <section>
+          <h3>.vue or .jsx</h3>
+        </section>
+
+        <section>
+          <img src="/assets/vue-component.png" class="plain" style="max-height: 70vh;">
+        </section>
+
+        <section>
+          <h3>Hot module replacement (HMR)</h3>
+        </section>
+
+        <section>
+          <img src="/assets/hmr.png" class="plain" style="max-height: 70vh;">
+        </section>
+
+        <section>
+          <h3>Downsides</h3>
           <ul>
-            <li>convention over configuration</li>
-            <li>.vue module syntax</li>
-            <li>.jsx files</li>
-            <li>Hot module replacement</li>
-            <li></li>
+            <li class="fragment" data-fragment-index="0">Separate static frontend codebase</li>
+            <li class="fragment" data-fragment-index="1">Running multiple processes</li>
           </ul>
         </section>
 
         <section>
-          foreman with Procfile.dev
+<div>
+<h3>Procfile (heroku)</h3>
+<pre>
+<code class="shell" data-trim data-noescape>
+web: bundle exec puma -C config/puma.rb
+worker: bundle exec sidekiq
+</code>
+</pre>
+</div>
+<div class="fragment" data-fragment-index="0">
+<h3>Procfile.dev</h3>
+<pre>
+<code class="shell" data-trim data-noescape>
+web: bin/rails server
+worker: bundle exec sidekiq
+webpack: bin/webpack-dev-server --inline --hot
+</code>
+</pre>
+</div>
+<div class="fragment" data-fragment-index="1">
+<h3>Running foreman</h3>
+<pre>
+<code class="shell" data-trim data-noescape>
+$ foreman start -f Procfile.dev
+</code>
+</pre>
+</div>
+        </section>
+
+        <section>
         </section>
 
         <section>
